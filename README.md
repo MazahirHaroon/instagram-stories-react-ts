@@ -23,3 +23,38 @@ Open your browser at `http://localhost:5173` and switch to a mobile-sized viewpo
 - **[Vite](https://vitejs.dev/)** (v6)
 
 ---
+
+### Folder Structure
+
+```graphql
+src/
+│── components/ (Reusable UI components)
+│   ├── instagtam-ui/(UI elements used in larger components)
+│   │   ├── Carousel.tsx
+│   │   ├── ... other ui components
+│   │   ├── index.ts(Re-exports all instagram-ui components)
+│   ├── Logo.tsx
+│   │   ├── index.ts(Re-exports all UI components)
+│   ├── ... other components
+│
+│── pages/ (App pages/screens)
+│   ├── Home.tsx
+│   ├── ... other pages
+│   ├── index.ts(Re-exports all pages components)
+│
+│── utils/(Utility functions/helpers)
+│   ├── (no functions added yet)
+│
+│── hooks/
+│   ├── ... hooks (no hooks added yet)
+│
+│── index.css (Tailwind setup)
+│
+│── constants/
+│   ├── stories.ts
+│   ├── ... other constant files
+|
+│── main.tsx
+```
+
+---
