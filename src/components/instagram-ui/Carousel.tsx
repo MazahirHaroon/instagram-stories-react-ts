@@ -1,12 +1,14 @@
 import type { Story } from '@constants/stories';
+
 import StoryThumbnail from './StoryThumbnail';
 import UsernameLabel from './UsernameLabel';
 
 interface CarouselProps {
   items: Story[];
+  showLabel?: boolean;
 }
 
-const Carousel = ({ items }: CarouselProps) => {
+const Carousel = ({ items, showLabel }: CarouselProps) => {
   return (
     <div className='flex flex-row gap-4 h-32 px-1.5 scrollbar-none overflow-x-auto overscroll-none scroll-smooth'>
       {items.map(({ id, userName, src, alt }) => (
@@ -15,7 +17,7 @@ const Carousel = ({ items }: CarouselProps) => {
           className='flex flex-col gap-1 items-center flex-shrink-0'
         >
           <StoryThumbnail src={src} alt={alt} />
-          <UsernameLabel label={userName} />
+          {showLabel && <UsernameLabel label={userName} />}
         </div>
       ))}
     </div>
