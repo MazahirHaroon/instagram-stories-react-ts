@@ -1,7 +1,7 @@
 const Logo = () => {
   return (
-    <div className='w-1/3'>
-      <img src='/instagram-logo.png' alt='Instagram' />
+    <div className='w-1/3 h-14'>
+      <img src='/instagram-logo.png' alt='Instagram' height={150} width={150} />
     </div>
   );
 };
