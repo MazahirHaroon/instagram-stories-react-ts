@@ -1,1 +1,19 @@
 @import 'tailwindcss';
+
+:root {
+  --color-instagram-gradient: linear-gradient(
+    115deg,
+    #f9ce34,
+    #ee2a7b,
+    #6228d7
+  );
+}
+
+@layer utilities {
+  .bg-instagram-gradient {
+    background-image: var(--color-instagram-gradient);
+  }
+  .scrollbar-none {
+    scrollbar-width: none;
+  }
+}
