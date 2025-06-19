@@ -29,7 +29,7 @@ Open your browser at `http://localhost:5173` and switch to a mobile-sized viewpo
 ```graphql
 src/
 │── components/ (Reusable UI components)
-│   ├── instagtam-ui/(UI elements used in larger components)
+│   ├── instagram-ui/(UI elements used in larger components)
 │   │   ├── Carousel.tsx
 │   │   ├── ... other ui components
 │   │   ├── index.ts(Re-exports all instagram-ui components)
