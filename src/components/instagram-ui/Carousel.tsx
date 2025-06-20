@@ -8,7 +8,7 @@ interface CarouselProps {
   showLabel?: boolean;
 }
 
-const Carousel = ({ items, showLabel }: CarouselProps) => {
+const Carousel = ({ items, showLabel = true }: CarouselProps) => {
   return (
     <div className='flex flex-row gap-4 h-32 px-1.5 scrollbar-none overflow-x-auto overscroll-none scroll-smooth'>
       {items.map(({ id, userName, src, alt }) => (
