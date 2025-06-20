@@ -2,7 +2,7 @@ import { useState } from 'react';
 import type { Story } from '@constants/stories';
 
 import { Logo } from '@components';
-import { Carousel } from '@instagram-ui';
+import { Carousel, StoryViewer } from '@instagram-ui';
 
 import { stories } from '@constants/stories';
 
@@ -11,7 +11,7 @@ const Home = () => {
   return (
     <div className='h-full'>
       {activeStory ? (
-        <img src={activeStory.src} alt={activeStory.atl} />
+        <StoryViewer story={activeStory} onClose={() => setActiveStory(null)} />
       ) : (
         <>
           <Logo />
