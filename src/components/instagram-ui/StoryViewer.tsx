@@ -1,5 +1,7 @@
 import type { Story } from '@constants/stories';
 
+import { Overlay, Close } from '@instagram-ui';
+
 interface StoryViewerProps {
   story: Story;
   onClose: () => void;
@@ -7,9 +9,11 @@ interface StoryViewerProps {
 
 const StoryViewer = ({ story, onClose }: StoryViewerProps) => (
   <div className='fixed inset-0 flex flex-col items-center justify-center bg-black z-[9999]'>
-    <span className='absolute top-4 right-2 text-white text-xl cursor-pointer'>
-      <button onClick={() => onClose()}>X</button>
-    </span>
+    <Overlay className='h-12'>
+      <span className='absolute top-4 right-2 text-white text-xl cursor-pointer'>
+        <Close onClose={onClose} />
+      </span>
+    </Overlay>
 
     <div>
       <img
