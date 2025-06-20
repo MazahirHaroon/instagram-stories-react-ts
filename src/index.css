@@ -7,11 +7,20 @@
     #ee2a7b,
     #6228d7
   );
+  --color-overlay-gradient: linear-gradient(
+    to right,
+    rgba(0, 0, 0, 0.6) 0%,
+    rgba(0, 0, 0, 0) 50%,
+    rgba(0, 0, 0, 0.6) 100%
+  );
 }
 
 @layer utilities {
   .bg-instagram-gradient {
     background-image: var(--color-instagram-gradient);
+  }
+  .bg-overlay-gradient {
+    background-image: var(--color-overlay-gradient);
   }
   .scrollbar-none {
     scrollbar-width: none;
