@@ -63,21 +63,57 @@ src/
 
 - **Icon8 Images**: <a target="_blank" href="https://icons8.com/icon/Xy10Jcu1L2Su/instagram">Instagram</a> icon by <a target="_blank" href="https://icons8.com">Icons8</a>
 - **Unsplash Images**
-  - **src**: https://images.unsplash.com/photo-1712901965138-9d62a8cc9e93,
-    - photographer: Rahul,
-  - **src**: https://images.unsplash.com/photo-1520312373131-a85680888414,
-    - photographer: Tom Walton,
-  - **src**: https://images.unsplash.com/photo-1629468571441-c556429b074e,
-    - photographer: Roshan Mohammed,
-  - **src**: https://images.unsplash.com/photo-1591851395311-65a7d160849a,
-    - photographer: Vivek,
-  - **src**: https://images.unsplash.com/photo-1598266218608-c2b9fd3dde21,
-    - photographer: Adi Lica,
-  - **src**: https://images.unsplash.com/photo-1678966432189-d58296e45ad2,
-    - photographer: Shubham S,
-  - **src**: https://images.unsplash.com/photo-1583513645242-25a32d451084,
-    - photographer: Sreehari Devadas,
-  - **src**: https://images.unsplash.com/photo-1629803099414-ef4eebf1f9fc,
-    - photographer: Sayooj M,
-  - **src**: https://images.unsplash.com/photo-1586030138336-4a854c6ddb5f,
-    - photographer: Daniel Joshua,
+  The following images were sourced from [Unsplash](https://unsplash.com), each credited to their respective photographers:
+
+  - **[A man wearing a Gandhi cap sitting on a charpai](https://images.unsplash.com/photo-1602907021769-9f2eba51d061)**
+
+    - Photographer: `Ashwini C`
+
+  - **[A group of people standing in front of Taj Mahal](https://images.unsplash.com/photo-1638336260785-d4a35d8ae5f3)**
+
+    - Photographer: `Vatra Voda`
+
+  - **[Football (soccer) training field at Kuantan](https://images.unsplash.com/photo-1517747614396-d21a78b850e8)**
+
+    - Photographer: `Izuddin Helmi Adnan`
+
+  - **[Mysore Palace](https://images.unsplash.com/photo-1523544545175-92e04b96d26b)**
+
+    - Photographer: `Ashim_d'Silva`
+
+  - **[Man wearing a yellow turban smoking a cigarette](https://images.unsplash.com/photo-1712901965138-9d62a8cc9e93)**
+
+    - Photographer: `Rahul Donga`
+
+  - **[Woman celebrating Holi by throwing colored powder](https://images.unsplash.com/photo-1520312373131-a85680888414)**
+
+    - Photographer: `Tom Walton`
+
+  - **[Beach shore in Kerala lined with coconut trees](https://images.unsplash.com/photo-1629468571441-c556429b074e)**
+
+    - Photographer: `Roshan Mohammed`
+
+  - **[A boy in brown jacket sitting on brown rock during daytime](https://images.unsplash.com/photo-1591851395311-65a7d160849a)**
+
+    - Photographer: `Vivek`
+
+  - **[Woman in a teal dress walking in front of Taj Mahal](https://images.unsplash.com/photo-1598266218608-c2b9fd3dde21)**
+
+    - Photographer: `Adi Lica`
+
+  - **[Yellow bus driving past India Gate](https://images.unsplash.com/photo-1678966432189-d58296e45ad2)**
+
+    - Photographer: `Shubham S`
+
+  - **[Green grass field in Kerala with trees and mountain](https://images.unsplash.com/photo-1583513645242-25a32d451084)**
+
+    - Photographer: `Sreehari Devadas`
+
+  - **[River flowing through dense green trees](https://images.unsplash.com/photo-1629803099414-ef4eebf1f9fc)**
+
+    - Photographer: `Sayooj M`
+
+  - **[Red and white lighthouse on a rock formation by the sea](https://images.unsplash.com/photo-1586030138336-4a854c6ddb5f)**
+    - Photographer: `Daniel Joshua`
+
+---
