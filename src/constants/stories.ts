@@ -6,6 +6,13 @@ export interface Story {
   alt: string;
 }
 
+export const StoryActions = {
+  NEXT: 'next',
+  PREVIOUS: 'previous',
+} as const;
+
+export type StoryAction = (typeof StoryActions)[keyof typeof StoryActions];
+
 export const stories: Story[] = [
   {
     id: '1',
