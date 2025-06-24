@@ -12,17 +12,17 @@ interface CarouselProps {
 const Carousel = ({ items, viewStory, showLabel = true }: CarouselProps) => {
   return (
     <div className='flex flex-row gap-4 h-32 px-1.5 scrollbar-none overflow-x-auto overscroll-none scroll-smooth'>
-      {items.map((story) => {
-        const { id, profilePicture, userName } = story;
+      {items.map((item) => {
+        const { id, avatar, userName } = item;
         return (
           <div
             key={id}
             className='flex flex-col gap-1 items-center flex-shrink-0'
           >
             <StoryThumbnail
-              src={profilePicture}
-              alt={userName}
-              viewStory={() => viewStory(story)}
+              avatar={avatar}
+              userName={userName}
+              viewStory={() => viewStory(item)}
               className='h-17 w-17'
             />
             {showLabel && <UsernameLabel label={userName} />}

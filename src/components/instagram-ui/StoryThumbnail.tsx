@@ -1,27 +1,26 @@
-import type { Story } from '@constants/stories';
+import { DEFAULT_AVATAR_URL, type Profile } from '@constants/profiles';
 
-import { DEFAULT_AVATAR_URL } from '@constants/profiles';
-
-interface StoryThumbnailProps extends Pick<Story, 'src' | 'alt'> {
+interface StoryThumbnailProps extends Pick<Profile, 'avatar' | 'userName'> {
   viewStory: () => void;
   className?: string;
+  viewedStory?: boolean;
 }
 
 const StoryThumbnail = ({
-  src,
-  alt,
+  avatar,
+  userName,
   viewStory,
   className,
 }: StoryThumbnailProps) => {
   return (
     <div
       onClick={() => viewStory()}
-      className={`p-0.75 bg-instagram-gradient rounded-full ${className}`}
+      className={`p-0.75 rounded-full border-2 border-gray-100 ${className}`}
     >
       <img
         className='p-0.5 h-full w-full object-contain bg-white rounded-full'
-        src={src ?? DEFAULT_AVATAR_URL}
-        alt={alt}
+        src={avatar ?? DEFAULT_AVATAR_URL}
+        alt={userName}
       />
     </div>
   );
