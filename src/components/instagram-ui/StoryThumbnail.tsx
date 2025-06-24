@@ -1,5 +1,7 @@
 import type { Story } from '@constants/stories';
 
+import { DEFAULT_AVATAR_URL } from '@constants/profiles';
+
 interface StoryThumbnailProps extends Pick<Story, 'src' | 'alt'> {
   viewStory: () => void;
   className?: string;
@@ -18,7 +20,7 @@ const StoryThumbnail = ({
     >
       <img
         className='p-0.5 h-full w-full object-contain bg-white rounded-full'
-        src={src}
+        src={src ?? DEFAULT_AVATAR_URL}
         alt={alt}
       />
     </div>
