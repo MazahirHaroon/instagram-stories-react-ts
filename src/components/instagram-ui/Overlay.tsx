@@ -6,7 +6,7 @@ interface OverlayProps {
 }
 
 const Overlay = ({ children, className = '' }: OverlayProps) => (
-  <div className={`inset-0 flex bg-overlay-gradient ${className}`}>
+  <div className={`fixed inset-0 flex bg-overlay-gradient ${className}`}>
     {children}
   </div>
 );
