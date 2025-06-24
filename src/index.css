@@ -10,7 +10,7 @@
   --color-overlay-gradient: linear-gradient(
     to right,
     rgba(0, 0, 0, 0.6) 0%,
-    rgba(0, 0, 0, 0) 50%,
+    rgba(0, 0, 0, 0.3) 50%,
     rgba(0, 0, 0, 0.6) 100%
   );
 }
