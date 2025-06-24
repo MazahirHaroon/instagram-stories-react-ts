@@ -1,4 +1,5 @@
 import { useEffect, useState } from 'react';
+
 import type { Story, StoryAction } from '@constants/stories';
 import type { ProfileWithStory } from '@constants/common';
 
@@ -6,6 +7,7 @@ import { profileMap } from '@constants/common';
 import { stories, StoryActions } from '@constants/stories';
 
 import { Carousel, StoryViewer } from '@instagram-ui';
+
 import { Logo } from '@components';
 
 const Home = () => {
