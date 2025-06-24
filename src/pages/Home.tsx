@@ -35,14 +35,16 @@ const Home = () => {
   }, []);
 
   const switchStory = (action: StoryAction) => {
-    const currentIndex = stories.findIndex(({ id }) => id === activeStory?.id);
+    const currentIndex = [...profileWithStories].findIndex(
+      ({ id }) => id === activeStory?.id
+    );
     switch (action) {
       case StoryActions.NEXT: {
-        setActiveStory(stories[currentIndex + 1] ?? null);
+        setActiveStory(profileWithStories[currentIndex + 1] ?? null);
         break;
       }
       case StoryActions.PREVIOUS: {
-        setActiveStory(stories[currentIndex - 1] ?? null);
+        setActiveStory(profileWithStories[currentIndex - 1] ?? null);
         break;
       }
     }
