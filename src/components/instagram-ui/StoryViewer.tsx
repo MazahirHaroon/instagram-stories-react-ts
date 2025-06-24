@@ -11,10 +11,21 @@ interface StoryViewerProps {
 const StoryViewer = ({ story, onClose, switchStory }: StoryViewerProps) => (
   <div className='fixed inset-0 flex flex-col items-center justify-center bg-black z-[9999]'>
     <Overlay className='h-12'>
-      <span className='absolute top-4 right-2 text-white text-xl cursor-pointer z-20'>
+      <span className='absolute top-4 right-2 text-white text-xl cursor-pointer z-[20]'>
         <Close onClose={onClose} />
       </span>
     </Overlay>
+
+    <div className='fixed top-12 h-full w-full'>
+      <button
+        onClick={() => switchStory(StoryActions.PREVIOUS)}
+        className='h-full w-1/2'
+      ></button>
+      <button
+        onClick={() => switchStory(StoryActions.NEXT)}
+        className='h-full w-1/2 '
+      ></button>
+    </div>
 
     <div>
       <img
@@ -22,17 +33,9 @@ const StoryViewer = ({ story, onClose, switchStory }: StoryViewerProps) => (
         alt={story.alt}
         className='max-h-full max-w-full object-contain'
       />
-      <button
-        onClick={() => switchStory(StoryActions.PREVIOUS)}
-        className='absolute left-0 h-full w-1/2 top-10 z-[9999]'
-      ></button>
-      <button
-        onClick={() => switchStory(StoryActions.NEXT)}
-        className='absolute right-0 h-full w-1/2 top-10 z-[9999]'
-      ></button>
     </div>
 
-    <div className='absolute bottom-0 h-12 bg-black w-full' />
+    <div className='absolute bottom-0 h-12 bg-black w-full z-[20]' />
   </div>
 );
 
