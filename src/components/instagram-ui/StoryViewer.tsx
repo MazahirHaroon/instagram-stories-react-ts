@@ -16,7 +16,7 @@ const StoryViewer = ({ story, onClose, switchStory }: StoryViewerProps) => (
       </span>
     </Overlay>
 
-    <div className='fixed top-12 h-full w-full'>
+    <div className='fixed top-12 h-full w-full md:w-1/2'>
       <button
         onClick={() => switchStory(StoryActions.PREVIOUS)}
         className='h-full w-1/2'
@@ -27,7 +27,7 @@ const StoryViewer = ({ story, onClose, switchStory }: StoryViewerProps) => (
       ></button>
     </div>
 
-    <div>
+    <div className='md:w-1/2'>
       <img
         src={story.src}
         alt={story.alt}
