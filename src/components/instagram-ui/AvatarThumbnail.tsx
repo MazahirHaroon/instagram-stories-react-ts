@@ -16,12 +16,16 @@ const AvatarThumbnail = ({
   return (
     <div
       onClick={() => clickAction()}
-      className={`p-0.75 rounded-full border-2 border-gray-100 ${className} ${
-        isHighlighted ? 'bg-instagram-gradient' : ''
+      className={`rounded-full  ${className} ${
+        isHighlighted
+          ? ' p-0.75 bg-instagram-gradient'
+          : 'border-2 border-gray-100'
       }`}
     >
       <img
-        className='p-0.5 h-full w-full object-contain bg-white rounded-full'
+        className={`h-full w-full object-contain rounded-full ${
+          isHighlighted ? 'p-0.5 bg-white' : ''
+        } `}
         src={avatar ?? DEFAULT_AVATAR_URL}
         alt={userName}
       />
