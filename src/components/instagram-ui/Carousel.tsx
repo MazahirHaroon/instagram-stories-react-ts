@@ -1,12 +1,12 @@
-import type { Story } from '@constants/stories';
+import type { ProfileWithStory } from '@constants/common';
 
 import StoryThumbnail from './StoryThumbnail';
 import UsernameLabel from './UsernameLabel';
 
 interface CarouselProps {
-  items: Story[];
+  items: ProfileWithStory[];
   showLabel?: boolean;
-  viewStory: (story: Story) => void;
+  viewStory: (story: ProfileWithStory) => void;
 }
 
 const Carousel = ({ items, viewStory, showLabel = true }: CarouselProps) => {
