@@ -1,10 +1,12 @@
 export interface Profile {
   id: string;
   userName: string;
-  avatar: string;
+  avatar: string | null;
 }
 
 const unsplashImageFormatParams = 'auto=format&fit=crop&w=150&h=150&crop=faces';
+
+export const DEFAULT_AVATAR_URL = '/default-avatar.png';
 
 export const profiles: Profile[] = [
   {
@@ -50,26 +52,26 @@ export const profiles: Profile[] = [
   {
     id: 'profile_10',
     userName: 'shubham_s',
-    avatar: '/default-avatar.png',
+    avatar: null,
   },
   {
     id: 'profile_11',
     userName: 'sreehari_devadas',
-    avatar: '/default-avatar.png',
+    avatar: null,
   },
   {
     id: 'profile_12',
     userName: 'sayooj_m',
-    avatar: '/default-avatar.png',
+    avatar: null,
   },
   {
     id: 'profile_13',
     userName: 'daniel_joshua',
-    avatar: '/default-avatar.png',
+    avatar: null,
   },
   {
     id: 'profile_14',
     userName: 'rahul_dev',
-    avatar: '/default-avatar.png',
+    avatar: null,
   },
 ];
