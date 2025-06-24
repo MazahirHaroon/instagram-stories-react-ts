@@ -64,7 +64,7 @@ export const stories: Story[] = [
   },
   {
     id: 'story_13',
-    profileId: 'profile_2',
+    profileId: 'profile_10',
     src: 'https://images.unsplash.com/photo-1629468571441-c556429b074e',
     type: 'image',
     alt: 'Beach shore in Kerala lined with coconut trees',
