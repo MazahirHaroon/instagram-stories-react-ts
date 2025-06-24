@@ -1,14 +1,15 @@
 interface UsernameLabelProps {
   label: string;
+  className?: string;
 }
 
-const UsernameLabel = ({ label }: UsernameLabelProps) => {
+const UsernameLabel = ({ label, className = '' }: UsernameLabelProps) => {
   return (
-    <div className='flex justify-center'>
-      <p className='text-xs w-18 text-center text-ellipsis overflow-hidden'>
-        {label}
-      </p>
-    </div>
+    <p
+      className={`text-xs text-center text-ellipsis overflow-hidden ${className}`}
+    >
+      {label}
+    </p>
   );
 };
 
