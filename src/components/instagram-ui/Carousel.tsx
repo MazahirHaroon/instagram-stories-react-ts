@@ -1,8 +1,6 @@
 import type { ProfileWithStory } from '@constants/common';
 
-import AvatarThumbnail from './AvatarThumbnail';
-import UsernameLabel from './UsernameLabel';
-
+import { AvatarThumbnail, UsernameLabel } from '@instagram-ui';
 interface CarouselProps {
   items: ProfileWithStory[];
   showLabel?: boolean;

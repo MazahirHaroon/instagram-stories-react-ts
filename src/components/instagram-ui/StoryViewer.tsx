@@ -1,5 +1,7 @@
 import type { Story, StoryAction } from '@constants/stories';
+
 import { StoryActions } from '@constants/stories';
+
 import { Overlay, Close } from '@instagram-ui';
 
 interface StoryViewerProps {
