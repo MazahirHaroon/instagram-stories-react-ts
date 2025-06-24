@@ -23,6 +23,7 @@ const Carousel = ({ items, viewStory, showLabel = true }: CarouselProps) => {
               src={profilePicture}
               alt={userName}
               viewStory={() => viewStory(story)}
+              className='h-17 w-17'
             />
             {showLabel && <UsernameLabel label={userName} />}
           </div>
