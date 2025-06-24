@@ -24,7 +24,7 @@ const Carousel = ({ items, viewStory, showLabel = true }: CarouselProps) => {
               className='h-17 w-17'
               isHighlighted={true}
             />
-            {showLabel && <UsernameLabel label={userName} />}
+            {showLabel && <UsernameLabel label={userName} className='w-18' />}
           </div>
         );
       })}
