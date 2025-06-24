@@ -1,8 +1,15 @@
 import Carousel from './Carousel';
-import StoryThumbnail from './StoryThumbnail';
+import AvatarThumbnail from './AvatarThumbnail';
 import UsernameLabel from './UsernameLabel';
 import StoryViewer from './StoryViewer';
 import Close from './Close';
 import Overlay from './Overlay';
 
-export { Carousel, StoryThumbnail, UsernameLabel, StoryViewer, Close, Overlay };
+export {
+  Carousel,
+  AvatarThumbnail,
+  UsernameLabel,
+  StoryViewer,
+  Close,
+  Overlay,
+};
