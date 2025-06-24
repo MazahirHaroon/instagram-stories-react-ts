@@ -1,6 +1,6 @@
 import type { ProfileWithStory } from '@constants/common';
 
-import StoryThumbnail from './StoryThumbnail';
+import AvatarThumbnail from './AvatarThumbnail';
 import UsernameLabel from './UsernameLabel';
 
 interface CarouselProps {
@@ -19,11 +19,12 @@ const Carousel = ({ items, viewStory, showLabel = true }: CarouselProps) => {
             key={id}
             className='flex flex-col gap-1 items-center flex-shrink-0'
           >
-            <StoryThumbnail
+            <AvatarThumbnail
               avatar={avatar}
               userName={userName}
-              viewStory={() => viewStory(item)}
+              clickAction={() => viewStory(item)}
               className='h-17 w-17'
+              isHighlighted={true}
             />
             {showLabel && <UsernameLabel label={userName} />}
           </div>
