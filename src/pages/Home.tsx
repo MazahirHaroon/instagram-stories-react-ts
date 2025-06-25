@@ -1,4 +1,4 @@
-import { useEffect, useState } from 'react';
+import { useCallback, useEffect, useState } from 'react';
 
 import type { StoryAction } from '@constants/stories';
 import type { ProfileWithStory } from '@constants/common';
@@ -15,6 +15,25 @@ const Home = () => {
   const [profileWithStories, setProfileWithStories] = useState<
     ProfileWithStory[] | []
   >([]);
+
+  const switchStory = useCallback(
+    (action: StoryAction) => {
+      const currentIndex = [...profileWithStories].findIndex(
+        ({ id }) => id === activeStory?.id
+      );
+      switch (action) {
+        case StoryActions.NEXT: {
+          setActiveStory(profileWithStories[currentIndex + 1] ?? null);
+          break;
+        }
+        case StoryActions.PREVIOUS: {
+          setActiveStory(profileWithStories[currentIndex - 1] ?? null);
+          break;
+        }
+      }
+    },
+    [activeStory, profileWithStories]
+  );
 
   useEffect(() => {
     const data = stories.map((story) => {
@@ -34,21 +53,17 @@ const Home = () => {
     setProfileWithStories(data);
   }, []);
 
-  const switchStory = (action: StoryAction) => {
-    const currentIndex = [...profileWithStories].findIndex(
-      ({ id }) => id === activeStory?.id
-    );
-    switch (action) {
-      case StoryActions.NEXT: {
-        setActiveStory(profileWithStories[currentIndex + 1] ?? null);
-        break;
-      }
-      case StoryActions.PREVIOUS: {
-        setActiveStory(profileWithStories[currentIndex - 1] ?? null);
-        break;
-      }
-    }
-  };
+  useEffect(() => {
+    if (!activeStory) return;
+
+    const timerId = setTimeout(() => {
+      switchStory(StoryActions.NEXT);
+    }, 5000);
+
+    return () => {
+      clearTimeout(timerId);
+    };
+  }, [switchStory, activeStory]);
 
   return (
     <div className='h-full'>
