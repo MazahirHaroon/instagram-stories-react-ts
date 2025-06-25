@@ -1,6 +1,6 @@
 import { useEffect, useState } from 'react';
 
-import type { Story, StoryAction } from '@constants/stories';
+import type { StoryAction } from '@constants/stories';
 import type { ProfileWithStory } from '@constants/common';
 
 import { profileMap } from '@constants/common';
@@ -11,7 +11,7 @@ import { Carousel, StoryViewer } from '@instagram-ui';
 import { Logo } from '@components';
 
 const Home = () => {
-  const [activeStory, setActiveStory] = useState<Story | null>(null);
+  const [activeStory, setActiveStory] = useState<ProfileWithStory | null>(null);
   const [profileWithStories, setProfileWithStories] = useState<
     ProfileWithStory[] | []
   >([]);
